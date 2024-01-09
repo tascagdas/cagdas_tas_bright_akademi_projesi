@@ -2,10 +2,10 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Footer from './Components/Footer/Footer';
 import Navbar from './Components/Navbar/Navbar';
-import HomePage from './Pages/Home/Home.js';
+import HomePage from './Pages/Home/Home.jsx';
 import AboutPage from './Pages/About/About.jsx';
 import './input.css';
-import Contact from './Pages/Contact/Contact.js';
+import ContactsPage from './Pages/Contacts/Contacts.jsx';
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/contacts" element={<ContactsPage />} />
         </Routes>
         <Footer />
       </BrowserRouter>
