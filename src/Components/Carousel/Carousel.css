@@ -1,0 +1,38 @@
+.carousel-container {
+    width: 80%;
+    margin: auto;
+    position: relative;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+}
+
+.carousel-slide {
+    flex: 0 0 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-image {
+    width: 100%;
+    height: auto;
+}
+
+.active {
+    transform: translateX(0);
+}
+
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #ddd;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.nav-button:hover {
+    background-color: #bbb;
+}

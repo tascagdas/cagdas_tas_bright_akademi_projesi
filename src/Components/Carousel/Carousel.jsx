@@ -1,39 +1,43 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import { ChevronLeft, ChevronRight } from "react-feather"
 
-const Carousel = () => {
-  return (
-      <>
-          <div className="relative flex items-center justify-center w-full dark:text-gray-50">
-              <button aria-label="Slide back" type="button" className="absolute left-0 z-30 p-2 ml-10 bg-opacity-50 rounded-full focus:outline-none focus:dark:bg-gray-400 focus:ri focus:ri focus:ri dark:bg-gray-900">
-                  <svg width="8" height="14" fill="none" viewBox="0 0 8 14" xmlns="http://www.w3.org/2000/svg" className="w-4 h-4">
-                      <path d="M7 1L1 7L7 13" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
-                  </svg>
-              </button>
-              <div className="flex items-center justify-start w-full h-full gap-6 py-4 mx-auto overflow-auto lg:gap-8">
-                  <div className="relative flex flex-shrink-0 w-full sm:w-auto">
-                      <img className="object-cover object-center dark:bg-gray-500 h-96 aspect-square" src="https://source.unsplash.com/random/240x360/?1" alt="Image 1" />
-                  </div>
-                  <div className="relative flex flex-shrink-0 w-full sm:w-auto">
-                      <img className="object-cover object-center dark:bg-gray-500 h-96 aspect-square" src="https://source.unsplash.com/random/240x360/?2" alt="Image 2" />
-                  </div>
-                  <div className="relative flex flex-shrink-0 w-full sm:w-auto">
-                      <img className="object-cover object-center dark:bg-gray-500 h-96 aspect-square" src="https://source.unsplash.com/random/240x360/?3" alt="Image 3" />
-                  </div>
-                  <div className="relative flex flex-shrink-0 w-full sm:w-auto">
-                      <img className="object-cover object-center dark:bg-gray-500 h-96 aspect-square" src="https://source.unsplash.com/random/240x360/?4" alt="Image 4" />
-                  </div>
-                  <div className="relative flex flex-shrink-0 w-full sm:w-auto">
-                      <img className="object-cover object-center dark:bg-gray-500 h-96 aspect-square" src="https://source.unsplash.com/random/240x360/?5" alt="Image 5" />
-                  </div>
-              </div>
-              <button aria-label="Slide forward" id="next" className="absolute right-0 z-30 p-2 mr-10 bg-opacity-50 rounded-full focus:outline-none focus:dark:bg-gray-400 focus:ri focus:ri focus:ri dark:bg-gray-900">
-                  <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-4 h-4">
-                      <path d="M1 1L7 7L1 13" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
-                  </svg>
-              </button>
-          </div>
-    </>
-  )
+const Carousel = ({ children: slides, autoSlide = false, autoSlideInterval = 3000 }) => {
+    const [curr, setCurr] = useState(0)
+
+    const prev = () => setCurr((curr) => (curr === 0 ? slides.length - 1 : curr - 1))
+
+    const next = () => setCurr((curr) => (curr === slides.length - 1 ? 0 : curr + 1))
+
+    useEffect(() => {
+        if (!autoSlide) return
+        const slideInterval = setInterval(next, autoSlideInterval)
+        return () => clearInterval(slideInterval)
+    }, [])
+
+
+    return (
+        <div className='overflow-hidden relative'>
+            <div className='flex transition-transform ease-out duration-500' style={{ transform: `translateX(-${curr * 100}%)` }}>
+                {slides}
+            </div>
+            <div className="absolute inset-0 flex items-center justify-between p-4">
+                <button onClick={prev} className='p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white'>
+                    <ChevronLeft />
+                </button>
+                <button onClick={next} className='p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white'>
+                    <ChevronRight />
+                </button>
+            </div>
+            <div className='absolute bottom-4 right-0 left-0'>
+                <div className='flex items-center justify-center gap-2'>
+                    {slides.map((s, i) => (
+                        <div key={i} className={`transition-all w-1.5 h-1.5 bg-white rounded-full  ${curr === i ? "p-0.5" : "bg-opacity-50"}`} />
+                    ))}
+                </div>
+            </div>
+        </div>
+
+    )
 }
 
 export default Carousel

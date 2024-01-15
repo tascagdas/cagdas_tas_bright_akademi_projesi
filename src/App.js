@@ -6,8 +6,11 @@ import HomePage from './Pages/Home/Home.jsx';
 import AboutPage from './Pages/About/About.jsx';
 import './input.css';
 import ContactsPage from './Pages/Contacts/Contacts.jsx';
+import Teachers from './Pages/Teachers/Teachers.jsx';
+import React, { useState } from 'react';
 
 function App() {
+
   return (
     <>
       <BrowserRouter>
@@ -15,7 +18,8 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
-          <Route path="/contacts" element={<ContactsPage />} />
+          <Route path="/contact" element={<ContactsPage />} />
+          <Route path="/instructors" element={<Teachers />} />
         </Routes>
         <Footer />
       </BrowserRouter>

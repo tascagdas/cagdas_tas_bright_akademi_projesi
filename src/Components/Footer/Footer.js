@@ -19,7 +19,7 @@ const Footer = () => {
                                     <a rel="noopener noreferrer" href="#" className="hover:dark:text-violet-400">Fullstack Programlama Eğitimi</a>
                                 </li>
                                 <li>
-                                    <a rel="noopener noreferrer" href="#" className="hover:dark:text-violet-400">Network, Sistem ve Siber Güvenlik Eğitimi</a>
+                                    <a rel="noopener noreferrer" href="#" className="hover:dark:text-violet-400">Siber Güvenlik Eğitimi</a>
                                 </li>
                                 <li>
                                     <a rel="noopener noreferrer" href="#" className="hover:dark:text-violet-400">Bulut Bilişim Uzmanlık Eğitimi</a>
@@ -30,28 +30,31 @@ const Footer = () => {
                             </ul>
                         </div>
                         <div className="col-span-6 text-center md:text-left md:col-span-3">
-                            <p className="pb-1 text-lg font-medium underline">Category</p>
+                            <p className="pb-1 text-lg font-medium underline">Sayfalar</p>
                             <ul className='list-disc space-y-2'>
                                 <li>
-                                    <a rel="noopener noreferrer" href="#" className="hover:dark:text-violet-400">Link</a>
+                                    <a rel="noopener noreferrer" href="/" className="hover:dark:text-violet-400">Anasayfa</a>
                                 </li>
                                 <li>
-                                    <a rel="noopener noreferrer" href="#" className="hover:dark:text-violet-400">Link</a>
+                                    <a rel="noopener noreferrer" href="/about" className="hover:dark:text-violet-400">Hakkımızda</a>
                                 </li>
                                 <li>
-                                    <a rel="noopener noreferrer" href="#" className="hover:dark:text-violet-400">Link</a>
+                                    <a rel="noopener noreferrer" href="classes" className="hover:dark:text-violet-400">Eğitimler</a>
+                                </li>
+                                <li>
+                                    <a rel="noopener noreferrer" href="contact" className="hover:dark:text-violet-400">İletişim</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <div className="grid justify-center pt-6 lg:justify-between">
                         <div className="flex flex-col self-center text-sm text-center md:block lg:col-start-1 md:space-x-6">
-                            <span>©2024 All rights reserved</span>
+                            <span>©2024 Tüm Hakları Saklıdır</span>
                             <a rel="noopener noreferrer" href="#">
-                                <span>Privacy policy</span>
+                                <span>Gizlilik Politikası</span>
                             </a>
                             <a rel="noopener noreferrer" href="#">
-                                <span>Terms of service</span>
+                                <span>Hizmet Șartları</span>
                             </a>
                         </div>
                         <div className="flex justify-center pt-4 space-x-4 lg:pt-0 lg:col-end-13">

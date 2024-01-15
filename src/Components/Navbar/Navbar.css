@@ -1,0 +1,66 @@
+.cd__main {
+    background: linear-gradient(to right, #6190e8, #a7bfe8) !important;
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+    min-height: 640px;
+    font-family: "Overpass";
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+#custom-toggle {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 20px;
+    width: 40px;
+    background-color: #333;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+    padding: 0 2px;
+    margin: 0;
+    cursor: pointer;
+}
+
+#custom-toggle.tgl-def::-webkit-slider-thumb {
+    background-color: orange;
+}
+
+#custom-toggle.tgl-on::-webkit-slider-thumb {
+    background-color: green;
+}
+
+#custom-toggle.tgl-off::-webkit-slider-thumb {
+    background-color: red;
+}
+
+#custom-toggle::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+}
+
+#custom-toggle:focus {
+    outline: none;
+}
+
+.rangeActive {
+    background-color: green;
+}
