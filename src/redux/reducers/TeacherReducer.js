@@ -1,7 +1,7 @@
 import { GET_TEACHERS, SELECTED_TEACHER } from "../actions/ActionTypes";
 const initialState = {
     teachers:[],
-    teacherIndex:""
+    teacher_index:"1"
 };
 
 const TeacherReducer = (state = initialState, action) => {
@@ -14,7 +14,7 @@ const TeacherReducer = (state = initialState, action) => {
         case SELECTED_TEACHER:
             return {
                 ...state,
-                teacherIndex: action.payload
+                teacher_index: action.payload
             };
         default:
             return state;

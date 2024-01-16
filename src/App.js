@@ -10,8 +10,13 @@ import Teachers from './Pages/Teachers/Teachers.jsx';
 import { React, useEffect, useState } from 'react'
 import TeamMember from './Components/TeamMember/TeamMember.jsx';
 import { useDispatch, useSelector } from 'react-redux'
-
 import { getTeachers } from './redux/actions/TeacherActions.js';
+import CoursesPage from './Pages/CoursesPage/CoursesPage.js';
+import CourseFS from './Components/Course/CourseFS.jsx';
+import CourseCA from './Components/Course/CourseCA.jsx';
+import CourseSS from './Components/Course/CourseSS.jsx';
+
+
 
 function App() {
   const dispatch = useDispatch();
@@ -33,6 +38,14 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactsPage />} />
           <Route path="/instructors" element={<Teachers />} />
+          <Route path="/courses" element={<CoursesPage />} />
+          <Route path="/courses/CourseFS" element={<CourseFS />} />
+          <Route path="/courses/CourseSS" element={<CourseSS />} />
+          <Route path="/courses/CourseCA" element={<CourseCA />} />
+
+
+
+
         </Routes>
         <Footer />
       </BrowserRouter>
