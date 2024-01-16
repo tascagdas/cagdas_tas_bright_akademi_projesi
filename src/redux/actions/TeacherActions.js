@@ -1,5 +1,5 @@
 import axios from "axios";
-import { GET_TEACHERS } from "./ActionTypes";
+import { GET_TEACHERS, SELECTED_TEACHER } from "./ActionTypes";
 
 export const getTeachers = () => (dispatch) => {
     console.log("getteachers")
@@ -10,4 +10,12 @@ export const getTeachers = () => (dispatch) => {
                 payload: response.data,
             })
         );
- }
+}
+
+export const selectedTeacher = (index) => (dispatch) => {
+    dispatch({
+        type: SELECTED_TEACHER,
+        payload: index,
+    })
+
+}

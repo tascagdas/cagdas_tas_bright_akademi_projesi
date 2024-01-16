@@ -16,6 +16,9 @@ const slides = [
 const About = () => {
   return (
     <div className="dark:bg-gray-800 dark:text-gray-100 ">
+      <div className='pb-10'>
+        
+</div>
       <Carousel autoSlide={true} >
         {slides.map((s) => (
           <img src={s} />
