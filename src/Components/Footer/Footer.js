@@ -14,7 +14,7 @@ const Footer = () => {
                         </div>
                         <div className="col-span-6 text-center md:text-left md:col-span-3">
                             <p className="pb-1 text-lg font-medium underline">Eğitimler</p>
-                            <ul className='list-disc space-y-2'>
+                            <ul className=' space-y-2'>
                                 <li>
                                     <a rel="noopener noreferrer" href="/courses/CourseFS" className="hover:dark:text-violet-400">Fullstack Programlama Eğitimi</a>
                                 </li>
@@ -28,7 +28,7 @@ const Footer = () => {
                         </div>
                         <div className="col-span-6 text-center md:text-left md:col-span-3">
                             <p className="pb-1 text-lg font-medium underline">Sayfalar</p>
-                            <ul className='list-disc space-y-2'>
+                            <ul className=' space-y-2'>
                                 <li>
                                     <a rel="noopener noreferrer" href="/" className="hover:dark:text-violet-400">Anasayfa</a>
                                 </li>
