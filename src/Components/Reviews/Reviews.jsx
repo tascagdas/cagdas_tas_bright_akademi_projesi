@@ -33,7 +33,7 @@ const Reviews = () => {
                         <div className="p-6 xl:col-span-3">
                             <div className="grid gap-4 md:grid-cols-2">
                                 <div className="grid content-center gap-4">
-                                    <div className="p-6 rounded shadow-md dark:bg-gray-900">
+                                    <div className="p-6 rounded shadow-md bg-gray-300 dark:bg-gray-900">
                                         <p>{comments[0]}</p>
                                         <div className="flex items-center mt-4 space-x-4">
                                             <img src="https://source.unsplash.com/50x50/?portrait?1" alt="" className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-gray-500" />
@@ -43,7 +43,7 @@ const Reviews = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="p-6 rounded shadow-md dark:bg-gray-900">
+                                    <div className="p-6 rounded shadow-md bg-gray-300 dark:bg-gray-900">
                                         <p>{comments[1]}</p>
                                         <div className="flex items-center mt-4 space-x-4">
                                             <img src="https://source.unsplash.com/50x50/?portrait?2" alt="" className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-gray-500" />
@@ -55,7 +55,7 @@ const Reviews = () => {
                                     </div>
                                 </div>
                                 <div className="grid content-center gap-4">
-                                    <div className="p-6 rounded shadow-md dark:bg-gray-900">
+                                    <div className="p-6 rounded shadow-md bg-gray-300 dark:bg-gray-900">
                                         <p>{comments[2]}</p>
                                         <div className="flex items-center mt-4 space-x-4">
                                             <img src="https://source.unsplash.com/50x50/?portrait?3" alt="" className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-gray-500" />
@@ -65,7 +65,7 @@ const Reviews = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="p-6 rounded shadow-md dark:bg-gray-900">
+                                    <div className="p-6 rounded shadow-md bg-gray-300 dark:bg-gray-900">
                                         <p>{comments[3]}</p>
                                         <div className="flex items-center mt-4 space-x-4">
                                             <img src="https://source.unsplash.com/50x50/?portrait?4" alt="" className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-gray-500" />

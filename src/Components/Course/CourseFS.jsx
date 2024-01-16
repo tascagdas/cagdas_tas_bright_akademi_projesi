@@ -1,11 +1,12 @@
 import React from 'react'
 import image from '../../images/11.jpeg'
+import './Course.css'
 
 const CourseFS = () => {
     return (
         <>
 
-            <div className="container w-full items-center flex flex-col  p-6 dark:bg-gray-900 dark:text-gray-100">
+            <div className=" w-full items-center flex flex-col  p-6 dark:bg-gray-900 dark:text-gray-100">
                 <img src={image} alt="" className="flex-shrink-0 object-cover max-w-xl  h-64 rounded-sm sm:h-96 dark:bg-gray-500 aspect-square" />
                 <div>
                     <h2 className="text-xl font-semibold my-10">Full Stack Programlama Eğitimi</h2>

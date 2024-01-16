@@ -80,7 +80,7 @@ const Team = () => {
                     {teacher.first_name + " " + teacher.last_name}
                   </a>
                   <p>{teacher.employment.title}</p>
-                  <Button onClick={() => {
+                  <Button className="mt-3" onClick={() => {
                     handleShow();
                     dispatch(selectedTeacher(index))
                   }} style={{ background: 'green' }} variant="success">Ayrıntı</Button>
