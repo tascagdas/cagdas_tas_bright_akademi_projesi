@@ -16,16 +16,13 @@ const Footer = () => {
                             <p className="pb-1 text-lg font-medium underline">Eğitimler</p>
                             <ul className='list-disc space-y-2'>
                                 <li>
-                                    <a rel="noopener noreferrer" href="#" className="hover:dark:text-violet-400">Fullstack Programlama Eğitimi</a>
+                                    <a rel="noopener noreferrer" href="/courses/CourseFS" className="hover:dark:text-violet-400">Fullstack Programlama Eğitimi</a>
                                 </li>
                                 <li>
-                                    <a rel="noopener noreferrer" href="#" className="hover:dark:text-violet-400">Siber Güvenlik Eğitimi</a>
+                                    <a rel="noopener noreferrer" href="/courses/CourseSS" className="hover:dark:text-violet-400">Siber Güvenlik Eğitimi</a>
                                 </li>
                                 <li>
-                                    <a rel="noopener noreferrer" href="#" className="hover:dark:text-violet-400">Bulut Bilişim Uzmanlık Eğitimi</a>
-                                </li>
-                                <li>
-                                    <a rel="noopener noreferrer" href="#" className="hover:dark:text-violet-400">Full Data Uzmanlık Eğitimi</a>
+                                    <a rel="noopener noreferrer" href="/courses/CourseCA" className="hover:dark:text-violet-400">Bulut Bilişim Uzmanlık Eğitimi</a>
                                 </li>
                             </ul>
                         </div>
@@ -39,10 +36,10 @@ const Footer = () => {
                                     <a rel="noopener noreferrer" href="/about" className="hover:dark:text-violet-400">Hakkımızda</a>
                                 </li>
                                 <li>
-                                    <a rel="noopener noreferrer" href="courses" className="hover:dark:text-violet-400">Eğitimler</a>
+                                    <a rel="noopener noreferrer" href="/courses" className="hover:dark:text-violet-400">Eğitimler</a>
                                 </li>
                                 <li>
-                                    <a rel="noopener noreferrer" href="contact" className="hover:dark:text-violet-400">İletişim</a>
+                                    <a rel="noopener noreferrer" href="/contact" className="hover:dark:text-violet-400">İletişim</a>
                                 </li>
                             </ul>
                         </div>
