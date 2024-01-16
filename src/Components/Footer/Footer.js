@@ -44,7 +44,7 @@ const Footer = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className="grid justify-center pt-6 lg:justify-between bg-gray-400">
+                    <div className="grid justify-center pt-6 lg:justify-between ">
                         <div className="flex flex-col self-center text-sm text-center md:block lg:col-start-1 md:space-x-6">
                             <span>©2024 Tüm Hakları Saklıdır</span>
                             <a rel="noopener noreferrer" href="#">
