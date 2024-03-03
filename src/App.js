@@ -43,9 +43,6 @@ function App() {
           <Route path="/courses/CourseSS" element={<CourseSS />} />
           <Route path="/courses/CourseCA" element={<CourseCA />} />
 
-
-
-
         </Routes>
         <Footer />
       </BrowserRouter>
